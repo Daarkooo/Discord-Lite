@@ -1,0 +1,14 @@
+{% extends "main.html" %}
+
+{% block content %}
+
+    <div>
+        <form method="POST" action="">
+            {% csrf_token %} {% comment %} for security issue {% endcomment %}
+            {{form.as_p}}  {% comment %} .as_p aline the the atributes of the form {% endcomment %}
+            <input type="submit" value="Submit"/>
+           
+        </from>
+    </div>
+
+{% endblock content %}

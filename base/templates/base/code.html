@@ -1,0 +1,10 @@
+{% extends "main.html" %}
+
+{% block content %}
+    
+{% for code in languages %}
+    <div><h3 id="code1"><u>{{code.name}}</u></h3> used for :  <h5 id="code2">{{code.for}}</h5></div>
+    <br>
+{% endfor %}
+
+{% endblock content %}
